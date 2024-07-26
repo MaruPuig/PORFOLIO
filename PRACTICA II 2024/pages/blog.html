@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revista Digital - Artículos</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <header>
+        <div class="menu-toggle" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="index.html">INTITUCIÓN</a></li>
+                <li><a href="./pages/blog.html">PRÁCTICA DOCENTE</a></li>
+                <li><a href="./pages/recursos.html">RECURSOS</a></li>
+                <li><a href="#"></a>MICRO-CLASE</li>
+            </ul>
+       
+        </nav>
+    </header>
+    <main>
+        <!-- Página 2: Artículos -->
+        <section id="articles" class="page">
+            <h1>REFLEXIONES</h1>
+            <div id="indice">
+                <h2>Índice de Temas</h2>
+                <ul>
+                    <li><a href="#art1">Reflexión "MI PRÁCTICA DOCENTE"</a></li>
+                    <li><a href="#art2">Gestionar la escuela con aulas heterogéneas (Rebeca Anijovich)</a></li>
+                    <li><a href="#art3">Todos pueden aprender (Rebeca Anijovich)</a></li>
+                    <li><a href="#art4">La escuela como organización inteligente (Inés Aguerrondo) </a></li>
+                    <li><a href="#art5">Integración Curricular De TIC Concepto Y Modelos</a></li>
+                </ul>
+            </div>
+            <div class="article" id="art1">
+                <h2>MI PRÁCTICA DOCENTE</h2>
+                <p>Mi experiencia personal<a href= "MI REFLEXIÓN PERSONAL ESC EPET.pdf"></a> 
+                 </p> 
+                <button onclick="scrollToTop()">Volver arriba</button>
+            </div>
+            <div class="article" id="art2">
+                <h2>Artículo 2</h2>
+                <p>Resumen del artículo 2.</p>
+                <button onclick="scrollToTop()">Volver arriba</button>
+            </div>
+            <div class="article" id="art3">
+                <h2>Artículo 3</h2>
+                <p>Resumen del artículo 3.</p>
+                <button onclick="scrollToTop()">Volver arriba</button>
+            </div>
+            <div class="article" id="art4">
+                <h2>Artículo 4</h2>
+                <p>Resumen del artículo 4.</p>
+                <button onclick="scrollToTop()">Volver arriba</button>
+            </div>
+            <div class="article" id="art5">
+                <h2>Artículo 5</h2>
+                <p>"Integración Curricular de TIC: Conceptos e Ideas" nos presenta sobre la integración de las tecnologías de la información y comunicación (TIC) en el ámbito educativo.  Más allá de simplemente "usar" las TIC, el documento enfatiza la importancia de integrarlas de manera profunda y significativa al currículo, convirtiéndolas en herramientas que potencian el aprendizaje y no en un fin en sí mismas.
+                    La integración curricular de las TIC no es un proceso simple, requiere un cambio de mentalidad tanto en profesores como en alumnos. Se necesita una filosofía educativa que valore las posibilidades didácticas de las TIC, un cambio de roles en el aula, y una planificación curricular que las incorpore como estrategia de aprendizaje. 
+                    Se propone distintos niveles de integración, desde el "apresto" inicial, donde se familiarizan con las TIC, hasta la "integración curricular" donde las TIC se convierten en herramientas invisibles que facilitan el aprendizaje de contenidos específicos.  
+                    Es importante destacar la importancia de la "apropiación" de las TIC, un proceso que implica internalizarlas como herramientas de nuestra sociedad y utilizarlas de manera natural y efectiva para la construcción del conocimiento. 
+                    La integración curricular de las TIC no es un objetivo a alcanzar, sino un proceso continuo de adaptación y evolución.  Es un camino que requiere de compromiso, planificación y una visión clara de cómo las TIC pueden contribuir a un aprendizaje más significativo y efectivo.
+                    </p>
+                <button onclick="scrollToTop()">Volver arriba</button>
+            </div>
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        const hamburger = document.getElementById("hamburger");
+        const nav = document.getElementById("nav");
+
+        hamburger.addEventListener("click", () => {
+            nav.classList.toggle("show");
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
